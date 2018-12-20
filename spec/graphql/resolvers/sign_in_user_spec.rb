@@ -19,6 +19,6 @@ RSpec.describe Resolvers::SignInUser do
   end
 
   it 'signs in the user' do
-    expect(@result.token).to exist
+    expect(@result.token).to be_truthy
   end
 end
